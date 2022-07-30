@@ -3,17 +3,17 @@
 
 
 <section class="dorne-welcome-area bg-img bg-overlay"
-style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl-.jpg)">
-<div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center">
-            <div class="col-12 col-md-10">
-                  <div class="hero-content">
-                        <h2>Top Class freelancing market place</h2>
-                        <h4>Choose service for your business</h4>
-                  </div>
-            </div>
-      </div>
-</div>
+    style="background-image:url(assets/img/bg-img/visa/freelanweb.jpg)">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="hero-content">
+                            <h2>Top Class freelancing market place</h2>
+                            <h4>Choose service for your business</h4>
+                    </div>
+                </div>
+        </div>
+    </div>
 
 </section>
 
@@ -163,253 +163,245 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
     </div>
 </section>
 
-
-
-
-
-
-
 <section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100"
-style="background-image:url(assets/img/bg-img/xhero-2.jpg.pagespeed.ic.SNso7MgWaO.jpg)">
-<div class="container">
-      <div class="row">
-            <div class="col-12">
-                  <div class="section-heading text-center">
-                        <span></span>
-                        <h4>Freelanweb Marketplace</h4>
-                        <p>Awesome Experiences</p>
-                  </div>
-            </div>
-      </div>
-      <div class="row">
-            <div class="col-12 col-lg-12">
-                  <div class="owl-carousel features-slides-hu">
+    style="background-image:url(assets/img/bg-img/visa/freelanweb.jpg)">
+    <div class="container">
+        <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                            <span></span>
+                            <h4>Freelanweb Marketplace</h4>
+                            <p>Awesome Experiences</p>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="owl-carousel features-slides-hu">
+                        <div class="card card-3">
+                            <div class="about-heading">
+                                <h1>Selling on Freelanweb</h1>
+                            </div>
+                            <div class="about-paragraph">
+                                <p> <strong>How to start selling :</strong>
+                                    Freelanweb is the world's largest marketplace for digital services. Share your skills with our buyer community—and make money while you're at it! Whether you're a graphic designer, programmer, content writer, translator, or voice-over artist, Freelanweb is the place for you. Below, you can find great tips to start selling on Freelanweb.
+                                    <br> <br>
+
+                                    <strong>Creating a Gig :</strong>
+                                    The service you offer and sell in the marketplace is called a "Gig." Your Gig is an opportunity to showcase your talent to potential buyers, and to provide them with all the information they may need before they choose to place an order with you.
+                                    <br> <br>
+
+                                    <strong>Editing a Gig :</strong>
+                                    Your Gig allows you to showcase your talent to potential buyers, so it's important to provide all the relevant information needed before placing an order with you. This means that, occasionally, you should update and edit certain elements of your Gig.
+
+
+
+                                        Whether it's pricing changes, adding new images or a video to your Gig gallery, providing extras, or rewriting your Gig description to demonstrate what your Gig entails, you always have the option to edit your Gig.
+
+                                        You can edit your Gig at any stage of the Gig creation process: Overview, Pricing, Description , and Gallery:
+                                    <br> <br>
+                                </p>
+                            </div>
+                    </div>
                     <div class="card card-3">
-                        <div class="about-heading">
-                              <h1>Selling on Freelanweb</h1>
-                        </div>
-                        <div class="about-paragraph">
-                              <p> <strong>How to start selling :</strong>
-                                  Freelanweb is the world's largest marketplace for digital services. Share your skills with our buyer community—and make money while you're at it! Whether you're a graphic designer, programmer, content writer, translator, or voice-over artist, Freelanweb is the place for you. Below, you can find great tips to start selling on Freelanweb.
-                                  <br> <br>
+                            <div class="about-heading">
+                                <h1>Buying on Freelanweb</h1>
+                            </div>
+                            <div class="about-paragraph">
+                                <p>Know the ins and outs of outsourcing and benefit from everything Freelanweb has to offer. From finding a freelancer to getting deliveries to your virtual doorstep, we’ll walk you through the steps to success.
+                                    <br>    <br>
 
-                                  <strong>Creating a Gig :</strong>
-                                  The service you offer and sell in the marketplace is called a "Gig." Your Gig is an opportunity to showcase your talent to potential buyers, and to provide them with all the information they may need before they choose to place an order with you.
-                                  <br> <br>
+                                    <strong>Using Freelanweb takes a simple count to five…</strong> <br><br>
 
-                                  <strong>Editing a Gig :</strong>
-                                  Your Gig allows you to showcase your talent to potential buyers, so it's important to provide all the relevant information needed before placing an order with you. This means that, occasionally, you should update and edit certain elements of your Gig.
+                                    Search. Your business needs it, our freelancers can make it. With advanced search options, getting what you want just got a lot easier
+                                    <br><br>
+                                            Choose. Keep your standards high and your brand aligned by reading reviews and screening work samples to help you meet your perfect match
 
-
-
-                                      Whether it's pricing changes, adding new images or a video to your Gig gallery, providing extras, or rewriting your Gig description to demonstrate what your Gig entails, you always have the option to edit your Gig.
-
-                                      You can edit your Gig at any stage of the Gig creation process: Overview, Pricing, Description , and Gallery:
-                                  <br> <br>
-                              </p>
-                        </div>
-                  </div>
-                  <div class="card card-3">
-                        <div class="about-heading">
-                              <h1>Buying on Freelanweb</h1>
-                        </div>
-                        <div class="about-paragraph">
-                              <p>Know the ins and outs of outsourcing and benefit from everything Freelanweb has to offer. From finding a freelancer to getting deliveries to your virtual doorstep, we’ll walk you through the steps to success.
-                                  <br>    <br>
-
-                                  <strong>Using Freelanweb takes a simple count to five…</strong> <br><br>
-
-                                  Search. Your business needs it, our freelancers can make it. With advanced search options, getting what you want just got a lot easier
-                                  <br><br>
-                                          Choose. Keep your standards high and your brand aligned by reading reviews and screening work samples to help you meet your perfect match
-
-                                          <br><br>
-                                          Get specific. Contact your chosen seller to share your requirements and get the right results.
-                                          <br><br>
-                                          Place an order. Now get back to work while your Freelanweb freelancers work for you.
-
-                                          <br><br>
-                                           Ding dong – delivery! Your finished order will arrive right in your inbox. Give your stamp of approval and get ready for the next great thing.
-
-                              </p>
-                        </div>
-                  </div>
-                        <div class="card card-3">
-                              <div class="about-heading">
-                                    <h1>Help & Support</h1>
-                              </div>
-                              <div class="about-paragraph">
-                                    <p><strong>Account security :</strong>
-                                        ID Verified Sellers
-                                        ID verification: Data protection and usage
-                                        Verifying your account using your phone
-                                        Keeping your account safe from malware and phishing
-                                        Verify your identity
-                                        Password, security question and two-factor authentication
-                                        Data and privacy <br> <br>
-
-                                        <strong>Buyer order management: </strong>
-                                        Using the Resolution Center
-                                        How to cancel an order
-                                        Brief & Match: Finding you sellers
-                                        What does my order status mean?
-                                        Seller Coupons
-                                        Milestones
-                                        Blocking certain sellers Academic services on Freelanweb  - The Dos and Don’ts
-                                        Data science and data-related services
-                                        Subscriptions
-                                        Responding to a Custom Order Request
-                                        Buyer Request: Tips
-                                        How do I remove the work sample from my Live Portfolio?
-                                        Freelanweb Select: Buyer loyalty program
-                                        "For Commercial Use" license details</p>
-                              </div>
-                        </div>
-                        <div class="card card-3">
-                              <div class="about-heading">
-                                    <h1>Trust & Safety</h1>
-                              </div>
-                              <div class="about-paragraph">
-                                    <p><strong>Personal Details :</strong>
-                                        Freelanweb values your privacy. Your data is secure at all times and we'll never share your personal information with third parties.
-                                        <br> <br>
-                                        <strong>Safe Payments :</strong>
-                                            All transactions are conducted on the Freelanweb platform. Whether a buyer uses a credit card, PayPal or other form of payment, we handle everything, and ensure the security of your personal details. Freelanweb is committed to the highest security standards as a Level 1 PCI-DSS service provider.
                                             <br><br>
+                                            Get specific. Contact your chosen seller to share your requirements and get the right results.
+                                            <br><br>
+                                            Place an order. Now get back to work while your Freelanweb freelancers work for you.
 
-                                            <strong>Secure Communications :</strong>
-                                            You can safely communicate and exchange files with any Seller on Freelanweb through our secure messaging system.
-                                    </p>
-                              </div>
-                        </div>
+                                            <br><br>
+                                            Ding dong – delivery! Your finished order will arrive right in your inbox. Give your stamp of approval and get ready for the next great thing.
 
-                  </div>
-            </div>
-      </div>
-</div>
+                                </p>
+                            </div>
+                    </div>
+                            <div class="card card-3">
+                                <div class="about-heading">
+                                        <h1>Help & Support</h1>
+                                </div>
+                                <div class="about-paragraph">
+                                        <p><strong>Account security :</strong>
+                                            ID Verified Sellers
+                                            ID verification: Data protection and usage
+                                            Verifying your account using your phone
+                                            Keeping your account safe from malware and phishing
+                                            Verify your identity
+                                            Password, security question and two-factor authentication
+                                            Data and privacy <br> <br>
+
+                                            <strong>Buyer order management: </strong>
+                                            Using the Resolution Center
+                                            How to cancel an order
+                                            Brief & Match: Finding you sellers
+                                            What does my order status mean?
+                                            Seller Coupons
+                                            Milestones
+                                            Blocking certain sellers Academic services on Freelanweb  - The Dos and Don’ts
+                                            Data science and data-related services
+                                            Subscriptions
+                                            Responding to a Custom Order Request
+                                            Buyer Request: Tips
+                                            How do I remove the work sample from my Live Portfolio?
+                                            Freelanweb Select: Buyer loyalty program
+                                            "For Commercial Use" license details</p>
+                                </div>
+                            </div>
+                            <div class="card card-3">
+                                <div class="about-heading">
+                                        <h1>Trust & Safety</h1>
+                                </div>
+                                <div class="about-paragraph">
+                                        <p><strong>Personal Details :</strong>
+                                            Freelanweb values your privacy. Your data is secure at all times and we'll never share your personal information with third parties.
+                                            <br> <br>
+                                            <strong>Safe Payments :</strong>
+                                                All transactions are conducted on the Freelanweb platform. Whether a buyer uses a credit card, PayPal or other form of payment, we handle everything, and ensure the security of your personal details. Freelanweb is committed to the highest security standards as a Level 1 PCI-DSS service provider.
+                                                <br><br>
+
+                                                <strong>Secure Communications :</strong>
+                                                You can safely communicate and exchange files with any Seller on Freelanweb through our secure messaging system.
+                                        </p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
 
 
-
-
 <section class="dorne-features-destinations-area destination">
-<div class="container-fluid">
-      <div class="row">
-            <div class="col-12">
-                  <div class="section-heading dark text-center">
-                        <span></span>
-                        <h4>Get inspired with projects made by our freelancers</h4>
-                        <p>Journey with Us</p>
-                  </div>
-            </div>
-      </div>
-      <div class="row">
-            <div class="col-12">
-                  <div class="owl-carousel features-slides-custom">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-12">
+                    <div class="section-heading dark text-center">
+                            <span></span>
+                            <h4>Get inspired with projects made by our freelancers</h4>
+                            <p>Journey with Us</p>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel features-slides-custom">
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/tour/web.jpg" alt="">
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5>Web & Mobile Design</h5>
-                                          <p>build your web</p>
-                                    </div>
-                              </div>
-                        </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/tour/web.jpg" alt="">
+                                <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                            <h5>Web & Mobile Design</h5>
+                                            <p>build your web</p>
+                                        </div>
+                                </div>
+                            </div>
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/tour/ani.jpg" alt="">
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5>Animated GIFs</h5>
-                                          <p>animation looks</p>
-                                    </div>
-                              </div>
-                        </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/tour/ani.jpg" alt="">
+                                <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                            <h5>Animated GIFs</h5>
+                                            <p>animation looks</p>
+                                        </div>
+                                </div>
+                            </div>
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/tour/flyer.jpg" alt="">
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5>Flyer Design</h5>
-                                          <p>flyer experience</p>
-                                    </div>
-                              </div>
-                        </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/tour/flyer.jpg" alt="">
+                                <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                            <h5>Flyer Design</h5>
+                                            <p>flyer experience</p>
+                                        </div>
+                                </div>
+                            </div>
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/tour/social.jpg" alt="">
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5>Social Media Design</h5>
-                                          <p>social media</p>
-                                    </div>
-                              </div>
-                        </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/tour/social.jpg" alt="">
+                                <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                            <h5>Social Media Design</h5>
+                                            <p>social media</p>
+                                        </div>
+                                </div>
+                            </div>
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/tour/book.jpg" alt="">
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5>Book Design</h5>
-                                          <p>design books</p>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </div>
-</div>
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/tour/book.jpg" alt="">
+                                <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                            <h5>Book Design</h5>
+                                            <p>design books</p>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
 
 
 
 
 <section class="dorne-features-restaurant-area bg-default">
-<div class="container-fluid">
-      <div class="row">
-            <div class="col-12">
-                  <div class="section-heading text-center">
-                        <span></span>
-                        <h4>Tranding Services</h4>
-                        <p>Order Now</p>
-                  </div>
-            </div>
-      </div>
-      <div class="row">
-            <div class="col-12">
-                  <div class="features-slides owl-carousel">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                            <span></span>
+                            <h4>Tranding Services</h4>
+                            <p>Order Now</p>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <div class="features-slides owl-carousel">
 
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/brand.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/card.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/blog.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/graphic.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/info.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/video.jpg" alt="">
-                        </div>
-                        <div class="single-features-area">
-                              <img src="assets/img/airlines/seo.jpg" alt="">
-                        </div>
-                  </div>
-            </div>
-      </div>
-</div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/brand.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/card.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/blog.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/graphic.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/info.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/video.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/seo.jpg" alt="">
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
 
 <section class="dorne-features-destinations-area">
@@ -425,39 +417,45 @@ style="background-image:url(assets/img/bg-img/xhero-2.jpg.pagespeed.ic.SNso7MgWa
       </div>
       <div class="row">
             <div class="col-12">
-                  <div class="features-slides owl-carousel">
+                    <div class="features-slides owl-carousel">
 
+                        @foreach ($sellers as $list)
+                        <a href="{{ route('buyer_req_gig',$list->id) }}">
                         <div class="single-features-area">
-                              <img src="assets/img/bg-img/xfeature-1.jpg.pagespeed.ic.DbE0Si6n1v.jpg"
-                                    alt="">
+                            <img src="{{ asset($list->image) }}"
+                                  alt="">
 
-                              <div class="price-start">
-                                    <p>Price 30$/starting</p>
-                              </div>
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5> <i class="fa fa-user"></i> Rakib</h5>
-                                          <p>Logo design</p>
-                                    </div>
-                              </div>
+                            <div class="price-start">
+                                  <p>Price {{ $list->price }}$/starting</p>
+                            </div>
+                            <div
+                                  class="feature-content d-flex align-items-center justify-content-between">
+                                  <div class="feature-title">
+                                        <h5> <i class="fa fa-user"></i> {{ $list->name }} </h5>
+                                        <p>{{ $list->title }}</p>
+                                  </div>
+                            </div>
                         </div>
+                            </a>
+                        @endforeach
 
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/xfeature-2.jpg.pagespeed.ic.B2mI3yYXD0.jpg"
-                                    alt="">
+                        <a href="">
+                            <div class="single-features-area">
+                                <img src="assets/img/bg-img/xfeature-2.jpg.pagespeed.ic.B2mI3yYXD0.jpg"
+                                      alt="">
 
-                              <div class="price-start">
-                                    <p>Price 20$/starting</p>
-                              </div>
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5> <i class="fa fa-user"></i> Pavel</h5>
-                                          <p>Software developer</p>
-                                    </div>
-                              </div>
-                        </div>
+                                <div class="price-start">
+                                      <p>Price 20$/starting</p>
+                                </div>
+                                <div
+                                      class="feature-content d-flex align-items-center justify-content-between">
+                                      <div class="feature-title">
+                                            <h5> <i class="fa fa-user"></i> Apu</h5>
+                                            <p>Software developer</p>
+                                      </div>
+                                </div>
+                          </div>
+                        </a>
 
                         <div class="single-features-area">
                               <img src="assets/img/bg-img/xfeature-3.jpg.pagespeed.ic.h2IM6pdI7i.jpg"
@@ -469,7 +467,7 @@ style="background-image:url(assets/img/bg-img/xhero-2.jpg.pagespeed.ic.SNso7MgWa
                               <div
                                     class="feature-content d-flex align-items-center justify-content-between">
                                     <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Israt20</h5>
+                                          <h5><i class="fa fa-user"></i> Jafor</h5>
                                           <p>Grapic designer</p>
                                     </div>
                               </div>
@@ -485,7 +483,7 @@ style="background-image:url(assets/img/bg-img/xhero-2.jpg.pagespeed.ic.SNso7MgWa
                               <div
                                     class="feature-content d-flex align-items-center justify-content-between">
                                     <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Mobarok</h5>
+                                          <h5><i class="fa fa-user"></i> Nazib</h5>
                                           <p>Web developer</p>
                                     </div>
                               </div>
@@ -501,12 +499,12 @@ style="background-image:url(assets/img/bg-img/xhero-2.jpg.pagespeed.ic.SNso7MgWa
                               <div
                                     class="feature-content d-flex align-items-center justify-content-between">
                                     <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Halima39</h5>
+                                          <h5><i class="fa fa-user"></i> Sojib</h5>
                                           <p>SEO specialist</p>
                                     </div>
                               </div>
                         </div>
-                  </div>
+                    </div>
             </div>
       </div>
 </div>

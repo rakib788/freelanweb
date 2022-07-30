@@ -26,15 +26,17 @@
                                     @if (Route::has('login'))
 
                                         @auth
-
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('info') }}">FreeLanWeb Info</a>
+                                            </li>
                                             @if (Auth::user()->role==0)
                                             <li class="nav-item">
-                                              <a class="nav-link" href="">Seller</a>
+                                              <a class="nav-link" href="{{ route('seller.index') }}">Seller</a>
                                             </li>
                                             @endif
                                             @if (Auth::user()->role==1)
                                             <li class="nav-item">
-                                              <a class="nav-link" href="">Buyer</a>
+                                              <a class="nav-link" href="{{ route('buyer.index') }}">Buyer</a>
                                             </li>
                                             @endif
 
@@ -55,12 +57,10 @@
 
 
                                         @else
-
                                             <li class="nav-item">
-                                                <a class="nav-link" href="{{ url('/redirects') }}">FreeLanWeb Info</a>
+                                                <a class="nav-link" href="{{ route('info') }}">FreeLanWeb Info</a>
                                             </li>
                                             <li class="nav-item">
-
                                                 <a class="nav-link" href="{{ route('login') }}">Login</a>
                                             </li>
                                             <li class="nav-item">

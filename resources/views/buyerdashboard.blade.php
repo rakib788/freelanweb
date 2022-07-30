@@ -34,14 +34,13 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                 <div class="col-4 col-md-4 col-lg-4">
                     <div class="card p-10">
                         <div class="card-image">
-                            <img class="card-img-top" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="{{ asset(auth()->user()->image) }}" alt="Card image cap">
                         </div>
                         <div class="card-body team-member">
                             <h5 class="card-title buyer-name">{{ Auth::user( )->name }}</h5>
                             <p class="card-text ">{{ Auth::user( )->email }}</p>
-                            <p class="card-text ">01975669195 <br>
-                                Tel: +88-0241070780 (Office)
-                            </p>
+                            <p class="card-text ">{{ Auth::user( )->phone }}</p>
+                            <p class="card-text ">{{ Auth::user( )->address }}</p>
                         </div>
                     </div>
                 </div>
@@ -72,66 +71,20 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        @foreach ($buyers as $list)
                                         <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
                                             data-wow-delay="0.2s">
-
                                             <div class="feature-events-content">
-                                                    <p>Posted Jobs</p>
+                                                <p>Posted Jobs</p>
 
-                                                    <h5>Jazz Concert</h5>
-                                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
-                                                    <div>
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-
-
-                                                    </div>
+                                                <h5>{{ $list->title }}</h5>
+                                                <p>{{ $list->desc }}</p>
+                                                <div>
+                                                    <img class="dashboard-img" src="{{ asset($list->image) }}" alt="Card image cap">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
-                                            data-wow-delay="0.2s">
-
-                                            <div class="feature-events-content">
-                                                    <p>Posted Jobs</p>
-
-                                                    <h5>Jazz Concert</h5>
-                                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
-                                                    <div>
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-
-
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
-                                            data-wow-delay="0.2s">
-
-                                            <div class="feature-events-content">
-                                                    <p>Posted Jobs</p>
-
-                                                    <h5>Jazz Concert</h5>
-                                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
-                                                    <div>
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-                                                        <img class="dashboard-img" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
-
-
-                                                    </div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                                         <div class="contact-form  dt-2"  >
@@ -139,20 +92,20 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                   <h6>Create New Job Post</h6>
                                             </div>
 
-                                            <form method="POST" action="{{ route('register') }}">
+                                            <form method="POST" action="{{ route('buyer.store') }}" enctype="multipart/form-data">
                                               @csrf
                                                   <div class="row">
                                                         <div class="col-12">
-                                                              <input type="text" name="name" class="form-control"
+                                                              <input type="text" name="title" class="form-control"
                                                                     placeholder="Enter your project title" required>
                                                         </div>
                                                       <div class="col-12">
-                                                          <textarea  name="description" id="" cols="30" rows="10" class="form-control"
+                                                          <textarea  name="desc" id="" cols="30" rows="10" class="form-control"
                                                           placeholder="Describe your project here.."  required></textarea>
                                                       </div>
                                                       <div class="col-12">
-                                                        <input type="file" name="name" class="form-control"
-                                                              placeholder="Enter Name" required>
+                                                        <input type="file" name="image" class="form-control"
+                                                               required>
                                                         </div>
 
                                                         <div class="col-12">

@@ -127,18 +127,19 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
 </section> --}}
 
 
-<div class="breadcumb-area bg-img bg-overlay"
+{{-- <div class="breadcumb-area bg-img bg-overlay"
 style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl-.jpg)">
-</div>
+</div> --}}
 
-<div class="dorne-contact-area d-md-flex" id="contact">
+<div class="dorne-contact-area d-md-flex  bg-img bg-overlay"  id="contact"
+style="background-image:url(assets/img/bg-img/visa/german.jpg)">
 
     <div class="dorne-map-area equal-height">
-        <div id="googleMap"></div>
+        {{-- <img src="{{ asset('assets/img/bg-img/visa/german.jpg') }}" alt=""> --}}
    </div>
 
 <div class="contact-form-area equal-height ">
-    <div class="contact-form ">
+    <div class="contact-form regi-form">
           <div class="contact-form-title">
                 <h6>Join Freelanweb</h6>
           </div>
@@ -150,39 +151,39 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                 <div class="row">
                     <div class="col-12 ">
                         <select name="role" class="select" required id="role">
-                            <option class="option" selected disabled value="">--Select--</option>
+                            <option class="option" selected disabled value=""> --Please Select Type</option>
                             <option class="option" value="0">Seller</option>
                             <option class="option" value="1">Buyer</option>
 
                         </select>
 
                     </div>
-                      <div class="col-12">
+                      <div class="col-6">
                             <input type="text" name="name" class="form-control"
                                   placeholder="Enter Name" required>
                       </div>
-                    <div class="col-12">
+                      <div class="col-6">
+                          <input type="email" name="email" class="form-control"
+                                placeholder="Email Address" required>
+                      </div>
+                    <div class="col-6">
                         <input type="text" name="address" class="form-control"
                               placeholder="Enter Address" required>
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
                         <input type="number" name="phone" class="form-control"
                               placeholder="Enter phone number" required>
                     </div>
-                    <div class="col-12">
-                        <input type="file" name="image" class="form-control"
-                               required>
-                    </div>
-                    <div class="col-12">
-                        <input type="email" name="email" class="form-control"
-                              placeholder="Email Address" required>
-                    </div>
-                      <div class="col-12">
+                      <div class="col-6">
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                      </div>
 
-                      <div class="col-12">
+                      <div class="col-6">
                         <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
+                     </div>
+                     <div class="col-12">
+                         <input type="file" name="image" class="form-control"
+                                required>
                      </div>
 
                       <div class="col-12">
@@ -195,8 +196,6 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
           </form>
     </div>
 </div>
-
-
 </div>
 @endsection
 

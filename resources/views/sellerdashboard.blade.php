@@ -34,14 +34,13 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                 <div class="col-4 col-md-4 col-lg-4">
                     <div class="card p-10">
                         <div class="card-image">
-                            <img class="card-img-top" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="{{ asset(auth()->user()->image) }}" alt="Card image cap">
                         </div>
                         <div class="card-body team-member">
                             <h5 class="card-title buyer-name">{{ Auth::user( )->name }}</h5>
                             <p class="card-text ">{{ Auth::user( )->email }}</p>
-                            <p class="card-text ">01975669195 <br>
-                                Tel: +88-0241070780 (Office)
-                            </p>
+                            <p class="card-text ">{{ Auth::user( )->phone }}</p>
+                            <p class="card-text ">{{ Auth::user( )->address }}</p>
                         </div>
                     </div>
                 </div>
@@ -71,43 +70,29 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                     </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
+
                                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                         <div class="container">
                                             <div class="row">
+                                                @foreach ($sellers as $list)
                                                 <div class="col-md-6 col-lg-6">
                                                     <div class="single-features-area dt-2">
-                                                        <img class="gig-img" src="assets/img/bg-img/xfeature-1.jpg.pagespeed.ic.DbE0Si6n1v.jpg"
+                                                        <img class="gig-img" src="{{ asset($list->image) }}"
                                                               alt="">
 
                                                         <div class="price-start">
-                                                              <p>Price 30$/starting</p>
+                                                              <p>Price {{ $list->price }}$/starting</p>
                                                         </div>
                                                         <div
                                                               class="feature-content d-flex align-items-center justify-content-between">
                                                               <div class="feature-title">
-                                                                    <h5> <i class="fa fa-user"></i> Rakib</h5>
-                                                                    <p> I will crate Logo design expensive price</p>
+                                                                    <h5> <i class="fa fa-user"></i> {{ $list->name  }}</h5>
+                                                                    <p> {{ $list->title }}</p>
                                                               </div>
                                                         </div>
                                                   </div>
                                                 </div>
-                                                <div class="col-md-6 col-lg-6">
-                                                    <div class="single-features-area dt-2">
-                                                        <img class="gig-img" src="assets/img/bg-img/xfeature-1.jpg.pagespeed.ic.DbE0Si6n1v.jpg"
-                                                              alt="">
-
-                                                        <div class="price-start">
-                                                              <p>Price 50$/starting</p>
-                                                        </div>
-                                                        <div
-                                                              class="feature-content d-flex align-items-center justify-content-between">
-                                                              <div class="feature-title">
-                                                                    <h5> <i class="fa fa-user"></i> Monir</h5>
-                                                                    <p> I will do Web design expensive price</p>
-                                                              </div>
-                                                        </div>
-                                                  </div>
-                                                </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +102,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                   <h6>Create New Gig</h6>
                                             </div>
 
-                                            <form method="POST" action="{{ route('register') }}">
+                                            <form method="POST" action="{{ route('seller.store') }}" enctype="multipart/form-data">
                                               @csrf
                                                   <div class="row">
                                                     <div class="col-12">
@@ -125,7 +110,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                               placeholder="Seller Name" required>
                                                   </div>
                                                         <div class="col-12">
-                                                              <input type="text" name="name" class="form-control"
+                                                              <input type="text" name="title" class="form-control"
                                                                     placeholder="Enter your gig title" required>
                                                         </div>
                                                         <div class="col-12">
@@ -133,11 +118,11 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                                   placeholder="Enter gig starting price" required>
                                                       </div>
                                                       <div class="col-12">
-                                                          <textarea  name="description" id="" cols="30" rows="10" class="form-control"
+                                                          <textarea  name="desc" id="" cols="30" rows="10" class="form-control"
                                                           placeholder="Describe your project here.."  required></textarea>
                                                       </div>
                                                       <div class="col-12">
-                                                        <input type="file" name="name" class="form-control"
+                                                        <input type="file" name="image" class="form-control"
                                                               placeholder="Enter Name" required>
                                                         </div>
 

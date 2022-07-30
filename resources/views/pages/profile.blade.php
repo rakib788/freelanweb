@@ -25,13 +25,14 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                 <div class="col-12 col-md-4 col-lg-4">
                     <div class="card p-10">
                         <div class="card-image">
-                            <img class="card-img-top" src="assets/img/team/yousuf-nobi.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="{{ asset(auth()->user()->image) }}" height="500px" width="auto" alt="Card image cap">
                         </div>
                         <div class="card-body team-member">
                             <h5 class="card-title buyer-name">{{ Auth::user( )->name }}</h5>
                             <p class="card-text ">{{ Auth::user( )->email }}</p>
-                            <p class="card-text ">01975669195 <br>
-                                Tel: +88-0241070780 (Office)
+                            <p class="card-text ">{{ Auth::user( )->phone }}
+                            </p>
+                            <p class="card-text ">{{ Auth::user( )->address }}
                             </p>
                         </div>
                     </div>
