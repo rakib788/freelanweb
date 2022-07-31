@@ -35,6 +35,7 @@ Route::get('/',[HomeContoller::class,'home'])->name('home');
 Route::get('/redirects',[HomeContoller::class,'index'])->name('header');
 Route::get('/buyer/gig-request/{id}',[HomeContoller::class,'buyer_gig'])->name('buyer_req_gig');
 Route::get('/buyer/gig-checkout/{id}',[HomeContoller::class,'buyer_gig_checkout'])->name('buyer_gig_checkout');
+Route::get('/buyer/delivery-work/',[HomeContoller::class, 'delivery_work'])->name('delivery_work');
 
 
 Route::get('/profile',[HomeContoller::class,'profile'])->name('profile');

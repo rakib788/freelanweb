@@ -53,7 +53,7 @@
                             <p class="mob-text">Digital</p>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <div class="row d-flex justify-content-end px-3">
+                            <div class="row mob-text d-flex justify-content-end px-3">
                                 <p class="mb-0" id="cnt1">1</p>
                                 <div class="d-flex flex-column plus-minus">
                                     <span class="vsm-text plus">+</span>
@@ -145,7 +145,7 @@
         margin-top: 1.3rem;
     }
 
-    h6.mob-text {
+    .mob-text {
         margin-top: 1em;
     }
 

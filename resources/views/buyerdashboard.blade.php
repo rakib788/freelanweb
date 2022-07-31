@@ -33,7 +33,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
           </div>
                 <div class="col-4 col-md-4 col-lg-4">
                     <div class="card p-10">
-                        <div class="card-image">
+                        <div class="card-image"> 
                             <img class="card-img-top" src="{{ asset(auth()->user()->image) }}" alt="Card image cap">
                         </div>
                         <div class="card-body team-member">

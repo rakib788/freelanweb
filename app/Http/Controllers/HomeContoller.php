@@ -40,4 +40,10 @@ class HomeContoller extends Controller
         $sellers = Seller::find($id);
         return view('pages.gig-checkout', compact('sellers'));
     }
+    
+    public function delivery_work()
+    {
+        // $sellers = Seller::find($id);
+        return view('pages.delivery-work');
+    }
 }

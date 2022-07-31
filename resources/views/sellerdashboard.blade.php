@@ -57,7 +57,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                         <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Crate New Gig</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Message</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3"  role="tab">Order</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Review</a>
@@ -134,12 +134,24 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                       </div>
                                     </div>
                                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <p>Third Panel</p>
+                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center">
+                                            <div class="feature-events-content">
+                                                <p>Posted Jobs</p>
+
+                                                <h5>tittle</h5>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maxime!</p>
+                                                <div>
+                                                    <img class="dashboard-img" src="assets/img/bg-img/tour/business.png" alt="Card image cap">
+                                                </div>
+
+                                                <a href="{{route('delivery_work' )}}" class="btn dorne-btn delivery-btn">DELIVERY WORK</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
 
-                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
