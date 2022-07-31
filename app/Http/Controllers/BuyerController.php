@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Buyer;
+use App\Models\DelevaryOrder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BuyerController extends Controller
 {
@@ -15,7 +17,8 @@ class BuyerController extends Controller
     public function index()
     {
         $buyers = Buyer::all();
-        return view('buyerdashboard', compact('buyers'));
+        $delivary_order = DelevaryOrder::all();
+        return view('buyerdashboard', compact('buyers','delivary_order'));
     }
 
     /**
@@ -50,6 +53,7 @@ class BuyerController extends Controller
         $post->title = $request->title;
         $post->desc = $request->desc;
         $post->image = $img_name;
+        $post->buyer_id =Auth::user()->id;
         $post->save();
         }
         return redirect()->back();

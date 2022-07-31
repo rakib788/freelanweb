@@ -25,8 +25,8 @@ style="background-image:url(http://127.0.0.1:8000/assets/img/bg-img/xhero-1.jpg.
                                     </div>
                                         <h5>Service Details: </h5>
                                         <p class="about-content"> {{ $sellers->desc }}</p>
-                                    
-                                    
+
+
                                 </div>
 
                                 <div class="feature-events-content">
@@ -35,10 +35,10 @@ style="background-image:url(http://127.0.0.1:8000/assets/img/bg-img/xhero-1.jpg.
                                         <img class="card-img-top" src="http://127.0.0.1:8000/assets/img/bg-img/tour/web-design.jpg" alt="Card image cap">
                                     </div>
                                     <div class="seller-details">
-                                        <h5 class="card-title buyer-name">name</h5>
-                                        <p class="card-text ">email</p>
-                                        <p class="card-text ">01837875027</p>
-                                        <p class="card-text ">address</p>
+                                        <h5 class="card-title buyer-name">{{ $user->name }}</h5>
+                                        <p class="card-text ">{{ $user->email }}</p>
+                                        <p class="card-text ">{{ $user->phone }}</p>
+                                        <p class="card-text ">{{ $user->address }}</p>
                                     </div>
                                 </div>
                         </div>

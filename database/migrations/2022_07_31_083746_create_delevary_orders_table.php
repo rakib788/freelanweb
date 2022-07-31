@@ -13,12 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('buyers', function (Blueprint $table) {
+        Schema::create('delevary_orders', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('buyer_id');
-            $table->string('title');
-            $table->longText('desc');
-            $table->string('image');
+            $table->bigInteger('order_id');
+            $table->longText('description');
+            $table->string('file')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buyers');
+        Schema::dropIfExists('delevary_orders');
     }
 };

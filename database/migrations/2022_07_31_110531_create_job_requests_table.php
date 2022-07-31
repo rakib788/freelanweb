@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('buyers', function (Blueprint $table) {
+        Schema::create('job_requests', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('buyer_id');
-            $table->string('title');
-            $table->longText('desc');
-            $table->string('image');
+            $table->bigInteger('seller_id')->nullable();
+            $table->longText('description');
+            $table->string('file')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buyers');
+        Schema::dropIfExists('job_requests');
     }
 };

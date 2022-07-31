@@ -133,21 +133,29 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                             </form>
                                       </div>
                                     </div>
+                                    @if (Auth::user()->role == 0)
+
                                     <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        @foreach ( $seller_order as $order)
+
+
                                         <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center">
                                             <div class="feature-events-content">
                                                 <p>Posted Jobs</p>
 
-                                                <h5>tittle</h5>
-                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maxime!</p>
+                                                <h5>{{ $order->name }}</h5>
+                                                <p>{{ $order->desc }}</p>
                                                 <div>
-                                                    <img class="dashboard-img" src="assets/img/bg-img/tour/business.png" alt="Card image cap">
+                                                    <img class="dashboard-img" src="{{ asset($order->order_image) }}" alt="Card image cap">
                                                 </div>
 
-                                                <a href="{{route('delivery_work' )}}" class="btn dorne-btn delivery-btn">DELIVERY WORK</a>
+                                                <a href="{{route('delivery_work',$order->id )}}" class="btn dorne-btn delivery-btn">DELIVERY WORK</a>
                                             </div>
                                         </div>
+                                        @endforeach
                                     </div>
+
+                                    @endif
                                 </div>
 
 

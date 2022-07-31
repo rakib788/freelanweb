@@ -9,11 +9,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="about-content text-center">
-                        @auth
+                        {{-- @auth
                             @if (Auth::user()->role == 0)
                                 <h2>Hi, Seller <span>{{ Auth::user()->name }} </span></h2>
                             @endif
-                        @endauth
+                        @endauth --}}
 
                     </div>
                 </div>
@@ -21,15 +21,17 @@
                 <div class="col-12 col-md-4 col-lg-4">
                     <div class="contact-form  dt-2"  >
                                             <div class="contact-form-title">
-                                                  <h6>Delivery Your Job</h6>
+                                                  <h6>Apply For Job</h6>
                                             </div>
 
-                                            <form method="POST" action="{{ route('order.delivary') }}" enctype="multipart/form-data">
+                                            <form method="POST" action="" enctype="multipart/form-data">
                                               @csrf
                                               {{-- <input type="text" name="order_id" value="{{  }}"> --}}
                                                   <div class="row">
                                                       <div class="col-12">
-                                                          <input type="hidden" name="order_id" value="{{ $seller_order->id }}" >
+                                                          <input type="texgt" name="post_id" value="{{ $buyerpost->id }}" >
+                                                          <input type="texgt" name="buyer_id" value="{{ $buyerpost->buyer_id }}" >
+                                                          <input type="texgt" name="seller_id" value="{{ Auth::user()->id }}" >
                                                       </div>
                                                       <div class="row">
                                                       <div class="col-12">

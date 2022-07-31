@@ -33,7 +33,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
           </div>
                 <div class="col-4 col-md-4 col-lg-4">
                     <div class="card p-10">
-                        <div class="card-image"> 
+                        <div class="card-image">
                             <img class="card-img-top" src="{{ asset(auth()->user()->image) }}" alt="Card image cap">
                         </div>
                         <div class="card-body team-member">
@@ -57,7 +57,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                         <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Crate Job Post</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Message</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3"  role="tab">Delivered Job</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Review</a>
@@ -116,7 +116,20 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                       </div>
                                     </div>
                                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <p>Third Panel</p>
+                                        @foreach ($delivary_order as $data)
+                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
+                                            data-wow-delay="0.2s">
+                                            <div class="feature-events-content">
+                                                <p>Posted Jobs</p>
+
+
+                                                <p>{{ $data->description }}</p>
+                                                <div>
+                                                    <img class="dashboard-img" src="{{ asset($data->file) }}" alt="Card image cap">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
 

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Seller;
+use App\Models\SellerOrder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SellerController extends Controller
 {
@@ -15,7 +17,8 @@ class SellerController extends Controller
     public function index()
     {
         $sellers = Seller::all();
-        return view('sellerdashboard', compact('sellers'));
+        $seller_order = SellerOrder::leftjoin('sellers','sellers.id','seller_orders.seller_gig_id')->leftJoin('users','seller_orders.seller_id','users.id')->select('seller_orders.*','sellers.*','sellers.image as order_image','seller_orders.id as id')->where('seller_orders.seller_id',Auth::user()->id)->get();
+        return view('sellerdashboard', compact('sellers','seller_order'));
     }
 
     /**

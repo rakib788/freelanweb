@@ -34,9 +34,12 @@ require __DIR__.'/auth.php';
 Route::get('/',[HomeContoller::class,'home'])->name('home');
 Route::get('/redirects',[HomeContoller::class,'index'])->name('header');
 Route::get('/buyer/gig-request/{id}',[HomeContoller::class,'buyer_gig'])->name('buyer_req_gig');
-Route::get('/buyer/gig-checkout/{id}',[HomeContoller::class,'buyer_gig_checkout'])->name('buyer_gig_checkout');
-Route::get('/buyer/delivery-work/',[HomeContoller::class, 'delivery_work'])->name('delivery_work');
-
+Route::get('/buyer/gig-checkout/{id}',[HomeContoller::class,'buyer_gig_checkout'])->name('buyer_gig_checkout')->middleware('auth');
+Route::get('/buyer/delivery-work/{id}',[HomeContoller::class, 'delivery_work'])->name('delivery_work');
+Route::post('/buyer/order-delivery',[HomeContoller::class, 'orderDelivery'])->name('order.delivary');
+Route::get('/seller/apply-work/{id}',[HomeContoller::class, 'applyWork'])->name('apply_work');
+Route::post('/seller/apply-work-store/',[HomeContoller::class, 'applyWorkStore'])->name('apply_work.store');
+Route::post('seller-order-request',[HomeContoller::class, 'sellerOrderRequest']);
 
 Route::get('/profile',[HomeContoller::class,'profile'])->name('profile');
 Route::resource('seller',SellerController::class);

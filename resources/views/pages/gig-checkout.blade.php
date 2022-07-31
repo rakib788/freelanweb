@@ -113,24 +113,31 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-4 mt-2">
-                                <div class="row d-flex justify-content-between px-4">
+                                {{-- <div class="row d-flex justify-content-between px-4">
                                     <p class="mb-1 text-left">Subtotal</p>
                                     <h6 class="mb-1 text-right">$23.49</h6>
                                 </div>
                                 <div class="row d-flex justify-content-between px-4">
                                     <p class="mb-1 text-left">Shipping</p>
                                     <h6 class="mb-1 text-right">$2.99</h6>
-                                </div>
+                                </div> --}}
                                 <div class="row d-flex justify-content-between px-4" id="tax">
-                                    <p class="mb-1 text-left">Total (tax included)</p>
-                                    <h6 class="mb-1 text-right">$26.48</h6>
+                                    <p class="mb-1 text-left">Total</p>
+                                    <h6 class="mb-1 text-right">${{ $sellers->price }}</h6>
                                 </div>
+                                <form action="{{ url('seller-order-request') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="buyer_id" value="{{ Auth::user()->id }}">
+                                    <input type="hidden" name="seller_id" value="{{ $sellers->seller_id }}">
+                                    <input type="hidden" name="seller_gig_id" value="{{ $sellers->id }}">
+
                                 <button class="btn dorne-btn btn-block">
                                     <span>
                                         <span id="checkout">Checkout</span>
                                         <span id="check-amt">$26.48</span>
                                     </span>
                                 </button>
+                            </form>
                             </div>
                         </div>
                     </div>
