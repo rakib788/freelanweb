@@ -15,7 +15,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                     <h2>Hi, Seller <span>{{ Auth::user()->name }}</span></h2>
                     @endif
                     @if (Auth::user()->role==1)
-                    <h2>Wellcome Buyer <span>{{ Auth::user()->name }}</span></h2>
+                    <h2>Welcome Buyer <span>{{ Auth::user()->name }}</span></h2>
                     @endif
                     @endauth
 

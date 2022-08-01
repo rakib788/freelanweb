@@ -28,7 +28,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
           <div class="row">
             <div class="col-12">
                 <div class="about-content text-center">
-                      <h2>Wellcome Buyer <span>{{ Auth::user( )->name }}</span></h2>
+                      <h2>Welcome Buyer <span>{{ Auth::user( )->name }}</span></h2>
                 </div>
           </div>
                 <div class="col-4 col-md-4 col-lg-4">
@@ -134,7 +134,10 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                             <div class="feature-events-content">
                                                 <h5>Seller Request</h5>
                                                 <p>Post tittle: <strong> {{ $list->post_id }} </strong></p>
-                                                <p>Seller Name: <strong> {{ $list->seller_id }} </strong></p> <br>
+                                                <a href="">
+                                                <p>Seller Name: <strong> {{ $list->seller_id }}  </strong> Click and Hire me !</p>
+                                                </a>
+                                                <br>
                                                 <p> <strong>Seller Massege: </strong> <br> {{ $list->desc }}</p>
                                                 <div>
                                                     <img class="dashboard-img" src="{{ asset($list->file) }}" alt="Card image cap">

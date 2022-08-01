@@ -17,12 +17,12 @@ class  HomeContoller extends Controller
         $role = Auth::user()->role;
 
         if($role=='1'){
-            $buyers = Buyer::all();
+            $buyers = Buyer::where('buyer_id',Auth::user()->id)->get();
             $sellerRequest= JobApply::all();
             $delivary_order = DelevaryOrder::leftjoin('seller_orders','seller_orders.id','delevary_orders.order_id')->leftJoin('users','seller_orders.buyer_id','users.id')->where('seller_orders.buyer_id',Auth::user()->id)->get();
             return view('buyerdashboard',compact('buyers','delivary_order','sellerRequest'));
         }else{
-            $sellers = Seller::all();
+            $sellers = Seller::where('seller_id',Auth::user()->id)->get();
             $seller_order = SellerOrder::leftjoin('sellers','sellers.id','seller_orders.seller_gig_id')->leftJoin('users','seller_orders.seller_id','users.id')->select('seller_orders.*','sellers.*','sellers.image as order_image','seller_orders.id as id')->where('seller_orders.seller_id',Auth::user()->id)->get();
 
             return view('sellerdashboard',compact('sellers','seller_order'));
