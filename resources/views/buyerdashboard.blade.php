@@ -130,13 +130,12 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                     </div>
                                     <div class="tab-pane" id="tabs-4" role="tabpanel">
                                         @foreach ( $sellerRequest as $list)
-                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
-                                            data-wow-delay="0.2s">
+                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center">
                                             <div class="feature-events-content">
-                                                <p>Seller Request</p>
-                                                <p>{{ $list->post_id }}</p>
-                                                <p>{{ $list->seller_id }}</p>
-                                                <p>{{ $list->desc }}</p>
+                                                <h5>Seller Request</h5>
+                                                <p>Post tittle: <strong> {{ $list->post_id }} </strong></p>
+                                                <p>Seller Name: <strong> {{ $list->seller_id }} </strong></p> <br>
+                                                <p> <strong>Seller Massege: </strong> <br> {{ $list->desc }}</p>
                                                 <div>
                                                     <img class="dashboard-img" src="{{ asset($list->file) }}" alt="Card image cap">
                                                 </div>

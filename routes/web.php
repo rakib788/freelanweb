@@ -63,8 +63,8 @@ Route::get('/service',[HomeContoller::class,'service'])->name('service');
 // Route::get('/createSeller/{id}',[SellerController::class,'createSeller'])->name('createSeller');
 
 
-Route::resource('seller',SellerController::class);
-Route::resource('buyer',BuyerController::class);
+Route::resource('seller',SellerController::class)->middleware('auth');
+Route::resource('buyer',BuyerController::class)->middleware('auth');
 
 
 
