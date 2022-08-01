@@ -2056,7 +2056,7 @@ div#dorneNav {
 
 
 .delivery-btn{
-    float: right;
+    /* float: right; */
     margin-top: 1rem;
 }
 
@@ -2067,4 +2067,11 @@ div#dorneNav {
 }
 .service-gig{
     margin-bottom: 1rem;
+}
+
+.accept-icon{
+    float: right;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }

@@ -73,91 +73,41 @@
           </div>
 </section>
 
-<section class="dorne-features-destinations-area destination">
+<section class="dorne-features-destinations-area">
     <div class="container-fluid">
           <div class="row">
                 <div class="col-12">
                       <div class="section-heading dark text-center">
                             <span></span>
-                            <h4>Popular professional services</h4>
-                            <p>Awesome Experiences</p>
+                            <h4>Recommanded Gigs</h4>
+                            <p>Buy Now!</p>
                       </div>
                 </div>
           </div>
           <div class="row">
                 <div class="col-12">
-                      <div class="owl-carousel features-slides-custom">
+                        <div class="features-slides owl-carousel">
 
+                            @foreach ($sellers as $list)
+                            <a href="{{ route('buyer_req_gig',$list->id) }}">
                             <div class="single-features-area">
-                                  <img src="assets/img/bg-img/tour/logo.jpg" alt="">
-                                  <div
-                                        class="feature-content d-flex align-items-center justify-content-between">
-                                        <div class="feature-title">
-                                              <h5>logo Design</h5>
-                                              <p>build your brand</p>
-                                        </div>
-                                        <div class="feature-favourite">
-                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        </div>
-                                  </div>
-                            </div>
+                                <img src="{{ asset($list->image) }}"
+                                      alt="">
 
-                            <div class="single-features-area">
-                                  <img src="assets/img/bg-img/tour/web-design.jpg" alt="">
-                                  <div
-                                        class="feature-content d-flex align-items-center justify-content-between">
-                                        <div class="feature-title">
-                                              <h5>Web Design</h5>
-                                              <p>Costomize your site</p>
-                                        </div>
-                                        <div class="feature-favourite">
-                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        </div>
-                                  </div>
+                                <div class="price-start">
+                                      <p>Price {{ $list->price }}$/starting</p>
+                                </div>
+                                <div
+                                      class="feature-content d-flex align-items-center justify-content-between">
+                                      <div class="feature-title">
+                                            <h5> <i class="fa fa-user"></i> {{ $list->name }} </h5>
+                                            <p>{{ $list->title }}</p>
+                                      </div>
+                                </div>
                             </div>
-
-                            <div class="single-features-area">
-                                  <img src="assets/img/bg-img/tour/seo.jpg" alt="">
-                                  <div
-                                        class="feature-content d-flex align-items-center justify-content-between">
-                                        <div class="feature-title">
-                                              <h5>SEO</h5>
-                                              <p>Tranding Rank</p>
-                                        </div>
-                                        <div class="feature-favourite">
-                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        </div>
-                                  </div>
-                            </div>
-
-                            <div class="single-features-area">
-                                  <img src="assets/img/bg-img/tour/d-market.jpg" alt="">
-                                  <div
-                                        class="feature-content d-flex align-items-center justify-content-between">
-                                        <div class="feature-title">
-                                              <h5>Marketing</h5>
-                                              <p>Go global</p>
-                                        </div>
-                                        <div class="feature-favourite">
-                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        </div>
-                                  </div>
-                            </div>
-
-                            <div class="single-features-area">
-                                  <img src="assets/img/bg-img/tour/grapic.jpg" alt="">
-                                  <div
-                                        class="feature-content d-flex align-items-center justify-content-between">
-                                        <div class="feature-title">
-                                              <h5>Grapic Design</h5>
-                                              <p>Awesome expericne</p>
-                                        </div>
-                                        <div class="feature-favourite">
-                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        </div>
-                                  </div>
-                            </div>
-                      </div>
+                                </a>
+                            @endforeach
+                        </div>
                 </div>
           </div>
     </div>
@@ -187,14 +137,8 @@
                             <div>
                                 <img class="dashboard-img" src="{{ asset($list->image) }}" alt="Card image cap">
                             </div>
-                            @auth
-                            @if (Auth::user()->role==0)
                             <a href="{{ route('apply_work',$list->id) }}" class="btn dorne-btn delivery-btn">Apply job</a>
-                            @else
-                            <a href="" class="btn dorne-btn delivery-btn">Apply job</a>
-                            @endif
 
-                            @endauth
                         </div>
                     </div>
             </div>
@@ -327,6 +271,141 @@
 
 <section class="dorne-features-destinations-area destination">
     <div class="container-fluid">
+          <div class="row">
+                <div class="col-12">
+                      <div class="section-heading dark text-center">
+                            <span></span>
+                            <h4>Popular professional services</h4>
+                            <p>Awesome Experiences</p>
+                      </div>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-12">
+                      <div class="owl-carousel features-slides-custom">
+
+                            <div class="single-features-area">
+                                  <img src="assets/img/bg-img/tour/logo.jpg" alt="">
+                                  <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                              <h5>logo Design</h5>
+                                              <p>build your brand</p>
+                                        </div>
+                                        <div class="feature-favourite">
+                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                  </div>
+                            </div>
+
+                            <div class="single-features-area">
+                                  <img src="assets/img/bg-img/tour/web-design.jpg" alt="">
+                                  <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                              <h5>Web Design</h5>
+                                              <p>Costomize your site</p>
+                                        </div>
+                                        <div class="feature-favourite">
+                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                  </div>
+                            </div>
+
+                            <div class="single-features-area">
+                                  <img src="assets/img/bg-img/tour/seo.jpg" alt="">
+                                  <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                              <h5>SEO</h5>
+                                              <p>Tranding Rank</p>
+                                        </div>
+                                        <div class="feature-favourite">
+                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                  </div>
+                            </div>
+
+                            <div class="single-features-area">
+                                  <img src="assets/img/bg-img/tour/d-market.jpg" alt="">
+                                  <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                              <h5>Marketing</h5>
+                                              <p>Go global</p>
+                                        </div>
+                                        <div class="feature-favourite">
+                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                  </div>
+                            </div>
+
+                            <div class="single-features-area">
+                                  <img src="assets/img/bg-img/tour/grapic.jpg" alt="">
+                                  <div
+                                        class="feature-content d-flex align-items-center justify-content-between">
+                                        <div class="feature-title">
+                                              <h5>Grapic Design</h5>
+                                              <p>Awesome expericne</p>
+                                        </div>
+                                        <div class="feature-favourite">
+                                              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        </div>
+                                  </div>
+                            </div>
+                      </div>
+                </div>
+          </div>
+    </div>
+</section>
+
+
+
+<section class="dorne-features-restaurant-area bg-default">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                            <span></span>
+                            <h4>Tranding Services</h4>
+                            <p>Order Now</p>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <div class="features-slides owl-carousel">
+
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/brand.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/card.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/blog.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/graphic.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/info.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/video.jpg" alt="">
+                            </div>
+                            <div class="single-features-area">
+                                <img src="assets/img/airlines/seo.jpg" alt="">
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="dorne-features-destinations-area destination">
+    <div class="container-fluid">
         <div class="row">
                 <div class="col-12">
                     <div class="section-heading dark text-center">
@@ -398,91 +477,6 @@
                 </div>
         </div>
     </div>
-</section>
-
-
-
-
-<section class="dorne-features-restaurant-area bg-default">
-    <div class="container-fluid">
-        <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                            <span></span>
-                            <h4>Tranding Services</h4>
-                            <p>Order Now</p>
-                    </div>
-                </div>
-        </div>
-        <div class="row">
-                <div class="col-12">
-                    <div class="features-slides owl-carousel">
-
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/brand.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/card.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/blog.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/graphic.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/info.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/video.jpg" alt="">
-                            </div>
-                            <div class="single-features-area">
-                                <img src="assets/img/airlines/seo.jpg" alt="">
-                            </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-</section>
-
-<section class="dorne-features-destinations-area">
-<div class="container-fluid">
-      <div class="row">
-            <div class="col-12">
-                  <div class="section-heading dark text-center">
-                        <span></span>
-                        <h4>Recommanded Gigs</h4>
-                        <p>Buy Now!</p>
-                  </div>
-            </div>
-      </div>
-      <div class="row">
-            <div class="col-12">
-                    <div class="features-slides owl-carousel">
-
-                        @foreach ($sellers as $list)
-                        <a href="{{ route('buyer_req_gig',$list->id) }}">
-                        <div class="single-features-area">
-                            <img src="{{ asset($list->image) }}"
-                                  alt="">
-
-                            <div class="price-start">
-                                  <p>Price {{ $list->price }}$/starting</p>
-                            </div>
-                            <div
-                                  class="feature-content d-flex align-items-center justify-content-between">
-                                  <div class="feature-title">
-                                        <h5> <i class="fa fa-user"></i> {{ $list->name }} </h5>
-                                        <p>{{ $list->title }}</p>
-                                  </div>
-                            </div>
-                        </div>
-                            </a>
-                        @endforeach
-                    </div>
-            </div>
-      </div>
-</div>
 </section>
 
 <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50"

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Seller;
 use App\Models\SellerOrder;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,7 +29,7 @@ class SellerController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -53,6 +54,7 @@ class SellerController extends Controller
             $image->move($img_path,$img_full_name);
         $post = new Seller();
         $post->name = $request->name;
+        $post->seller_id = $request->seller_id;
         $post->title = $request->title;
         $post->price = $request->price;
         $post->desc = $request->desc;

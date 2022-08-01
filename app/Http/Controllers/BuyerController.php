@@ -40,7 +40,7 @@ class BuyerController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

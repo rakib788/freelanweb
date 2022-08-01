@@ -3,6 +3,7 @@
 use App\Http\Controllers\BuyerController;
 use App\Http\Controllers\HomeContoller;
 use App\Http\Controllers\SellerController;
+use App\Models\Seller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,6 +58,9 @@ Route::post('buyer/profile-update/{id}',[HomeContoller::class,'buyerProfileUpdat
 
 Route::get('/job',[HomeContoller::class,'job'])->name('job');
 Route::get('/service',[HomeContoller::class,'service'])->name('service');
+
+
+// Route::get('/createSeller/{id}',[SellerController::class,'createSeller'])->name('createSeller');
 
 
 Route::resource('seller',SellerController::class);

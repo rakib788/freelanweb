@@ -29,9 +29,9 @@
                                               {{-- <input type="text" name="order_id" value="{{  }}"> --}}
                                                   <div class="row">
                                                       <div class="col-12">
-                                                          <input type="text" name="post_id" value="{{ $buyerpost->title }}" >
+                                                          <input type="hidden" name="post_id" value="{{ $buyerpost->title }}" >
                                                           <input type="hidden" name="buyer_id" value="{{ $buyerpost->buyer_id }}" >
-                                                          <input type="name" name="seller_id" value="{{ Auth::user()->name }}" >
+                                                          <input type="hidden" name="seller_id" value="{{ Auth::user()->name }}" >
                                                       </div>
                                                       <div class="row">
                                                       <div class="col-12">

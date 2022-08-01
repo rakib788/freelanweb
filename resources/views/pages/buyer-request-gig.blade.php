@@ -22,7 +22,7 @@ style="background-image:url(http://127.0.0.1:8000/assets/img/bg-img/xhero-1.jpg.
                                     <h4 class="gig-tittle">{{ $sellers->title }}</h4>
                                     <div>
                                         <img class="" src="{{ asset($sellers->image) }}" alt="Card image cap">
-                                    </div>
+                                    </div><br><br>
                                         <h5>Service Details: </h5>
                                         <p class="about-content"> {{ $sellers->desc }}</p>
 
@@ -32,7 +32,7 @@ style="background-image:url(http://127.0.0.1:8000/assets/img/bg-img/xhero-1.jpg.
                                 <div class="feature-events-content">
                                     <h5>About seller: </h5>
                                     <div class="">
-                                        <img class="card-img-top" src="http://127.0.0.1:8000/assets/img/bg-img/tour/web-design.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="{{ asset($user->image) }}" alt="Card image cap">
                                     </div>
                                     <div class="seller-details">
                                         <h5 class="card-title buyer-name">{{ $user->name }}</h5>

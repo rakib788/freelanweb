@@ -14,17 +14,14 @@
                     </div>
                 </div> --}}
                 <div class="col-4 col-md-4 col-lg-4 ">
-                    <h4 class="heading">Shopping Bag</h4>
+                    <h4 class="heading">Gig image</h4>
                 </div>
                 <div class="col-8 col-md-8 col-lg-8">
                     <div class="row text-right">
-                        <div class="col-md-4 col-lg-4">
-                            <h6 class="mt-2">Format</h6>
+                        <div class="col-md-6 col-lg-6">
+                            <h6 class="mt-2">Details</h6>
                         </div>
-                        <div class="col-md-4 col-lg-4">
-                            <h6 class="mt-2">Quantity</h6>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
+                        <div class="col-md-6 col-lg-6">
                             <h6 class="mt-2">Price</h6>
                         </div>
                     </div>
@@ -32,22 +29,27 @@
             </div>
 
             <div class="row d-flex justify-content-center border-top">
-                <div class="col-4 col-md-4 col-lg-4">
+                <div class="col-12 col-md-12 col-lg-12">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-4 col-lg-4">
                             <div class="book">
                                 <img src="{{ asset($sellers->image) }}" class="book-img">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-4 col-lg-4">
                             <div class="checkout-gig-info">
                                 <h6 class="mob-text">{{ $sellers->title }}</h6>
                                 {{-- <p class="mob-text">{{ $sellers->desc }}</p> --}}
                             </div>
                         </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="row text-right">
+                                <h6 class="mob-text">${{ $sellers->price }}</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="my-auto col-8 col-md-8 col-lg-8">
+                {{-- <div class="my-auto col-8 col-md-8 col-lg-8">
                     <div class="row text-right">
                         <div class="col-md-4 col-lg-4">
                             <p class="mob-text">Digital</p>
@@ -65,7 +67,7 @@
                             <h6 class="mob-text">${{ $sellers->price }}</h6>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             <div class="row justify-content-center">
@@ -86,7 +88,7 @@
                                     <p class="my-auto">PayPal</p>
                                 </div>
                                 <div>
-                                    <button class="btn btn-sm bg-light border border-dark">GO BACK</button>
+                                    <a href="{{ route('home') }}" class="btn btn-sm bg-light border border-dark">GO BACK</a>
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-4">
@@ -131,10 +133,15 @@
                                     <input type="hidden" name="seller_id" value="{{ $sellers->seller_id }}">
                                     <input type="hidden" name="seller_gig_id" value="{{ $sellers->id }}">
 
-                                <button class="btn dorne-btn btn-block">
+                                    <a href="javascript:void(0)" ondblclick="alert('Coming soon')" class="btn dorne-btn btn-block">
+                                        <span>
+                                            <span id="checkout">Pay Now</span>
+                                            <span id="check-amt">${{ $sellers->price }}</span>
+                                        </span>
+                                    </a> <br> <br>
+                                <button class="btn dorne-btn btn-block ">
                                     <span>
-                                        <span id="checkout">Checkout</span>
-                                        <span id="check-amt">$26.48</span>
+                                        <span id="" class="text-center">Order</span>
                                     </span>
                                 </button>
                             </form>
@@ -148,6 +155,9 @@
 @endsection
 
 <style scoped>
+    .text-center{
+        text-align: center !important;
+    }
     p.my-auto {
         margin-top: 1.3rem;
     }

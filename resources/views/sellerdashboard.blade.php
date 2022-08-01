@@ -107,8 +107,12 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                   <div class="row">
                                                     <div class="col-12">
                                                         <input type="text" name="name" class="form-control"
-                                                              placeholder="Seller Name" required>
+                                                              placeholder="Gig Type" required>
                                                   </div>
+                                                  <div class="col-12">
+                                                    <input type="hidden" name="seller_id" value="{{ Auth::user()->id }}" class="form-control"
+                                                          placeholder="Seller id" required>
+                                              </div>
                                                         <div class="col-12">
                                                               <input type="text" name="title" class="form-control"
                                                                     placeholder="Enter your gig title" required>
@@ -142,13 +146,12 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                         <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center">
                                             <div class="feature-events-content">
                                                 <p>Posted Jobs</p>
-
                                                 <h5>{{ $order->name }}</h5>
                                                 <p>{{ $order->desc }}</p>
                                                 <div>
                                                     <img class="dashboard-img" src="{{ asset($order->order_image) }}" alt="Card image cap">
                                                 </div>
-
+                                                {{-- <a href="" class="btn dorne-btn delivery-btn">Accept</a> --}}
                                                 <a href="{{route('delivery_work',$order->id )}}" class="btn dorne-btn delivery-btn">DELIVERY WORK</a>
                                             </div>
                                         </div>

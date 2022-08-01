@@ -31,12 +31,17 @@
                                             </li>
 
                                             @if (Auth::user()->role==0)
-
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('job') }}">Job</a>
+                                            </li>
                                             <li class="nav-item">
                                               <a class="nav-link" href="{{ route('seller.index') }}">Seller</a>
                                             </li>
                                             @endif
                                             @if (Auth::user()->role==1)
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('service') }}">Service</a>
+                                            </li>
                                             <li class="nav-item">
                                               <a class="nav-link" href="{{ route('buyer.index') }}">Buyer</a>
                                             </li>
