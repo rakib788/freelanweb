@@ -2059,3 +2059,12 @@ div#dorneNav {
     float: right;
     margin-top: 1rem;
 }
+
+
+.service-imge{
+    height: 250px;
+    width: 100%;
+}
+.service-gig{
+    margin-bottom: 1rem;
+}

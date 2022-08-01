@@ -34,6 +34,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                             </p>
                             <p class="card-text ">{{ Auth::user( )->address }}
                             </p>
+                            <a href="{{ route('buyerProfile.edit', auth()->user()->id ) }}" class="btn dorne-btn btn-sm">Edit</a>
                         </div>
                     </div>
                 </div>

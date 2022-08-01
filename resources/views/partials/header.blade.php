@@ -29,7 +29,9 @@
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('info') }}">FreeLanWeb Info</a>
                                             </li>
+
                                             @if (Auth::user()->role==0)
+
                                             <li class="nav-item">
                                               <a class="nav-link" href="{{ route('seller.index') }}">Seller</a>
                                             </li>
@@ -59,6 +61,12 @@
                                         @else
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('info') }}">FreeLanWeb Info</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('job') }}">Job</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('service') }}">Service</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('login') }}">Login</a>

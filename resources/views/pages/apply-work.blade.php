@@ -24,18 +24,18 @@
                                                   <h6>Apply For Job</h6>
                                             </div>
 
-                                            <form method="POST" action="" enctype="multipart/form-data">
+                                            <form method="POST" action="{{ route('apply_work.store') }}" enctype="multipart/form-data">
                                               @csrf
                                               {{-- <input type="text" name="order_id" value="{{  }}"> --}}
                                                   <div class="row">
                                                       <div class="col-12">
-                                                          <input type="texgt" name="post_id" value="{{ $buyerpost->id }}" >
-                                                          <input type="texgt" name="buyer_id" value="{{ $buyerpost->buyer_id }}" >
-                                                          <input type="texgt" name="seller_id" value="{{ Auth::user()->id }}" >
+                                                          <input type="text" name="post_id" value="{{ $buyerpost->title }}" >
+                                                          <input type="hidden" name="buyer_id" value="{{ $buyerpost->buyer_id }}" >
+                                                          <input type="name" name="seller_id" value="{{ Auth::user()->name }}" >
                                                       </div>
                                                       <div class="row">
                                                       <div class="col-12">
-                                                          <textarea  name="description" id="" cols="30" rows="10" class="form-control"
+                                                          <textarea  name="desc" id="" cols="30" rows="10" class="form-control"
                                                           placeholder="Describe your delivery status.."  required></textarea>
                                                       </div>
                                                       <div class="col-12">

@@ -187,7 +187,14 @@
                             <div>
                                 <img class="dashboard-img" src="{{ asset($list->image) }}" alt="Card image cap">
                             </div>
+                            @auth
+                            @if (Auth::user()->role==0)
                             <a href="{{ route('apply_work',$list->id) }}" class="btn dorne-btn delivery-btn">Apply job</a>
+                            @else
+                            <a href="" class="btn dorne-btn delivery-btn">Apply job</a>
+                            @endif
+
+                            @endauth
                         </div>
                     </div>
             </div>
@@ -472,72 +479,6 @@
                         </div>
                             </a>
                         @endforeach
-
-                        <a href="">
-                            <div class="single-features-area">
-                                <img src="assets/img/bg-img/xfeature-2.jpg.pagespeed.ic.B2mI3yYXD0.jpg"
-                                      alt="">
-
-                                <div class="price-start">
-                                      <p>Price 20$/starting</p>
-                                </div>
-                                <div
-                                      class="feature-content d-flex align-items-center justify-content-between">
-                                      <div class="feature-title">
-                                            <h5> <i class="fa fa-user"></i> Apu</h5>
-                                            <p>Software developer</p>
-                                      </div>
-                                </div>
-                          </div>
-                        </a>
-
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/xfeature-3.jpg.pagespeed.ic.h2IM6pdI7i.jpg"
-                                    alt="">
-
-                              <div class="price-start">
-                                    <p>Price 10$/starting</p>
-                              </div>
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Jafor</h5>
-                                          <p>Grapic designer</p>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/xfeature-4.jpg.pagespeed.ic.dmGHSzGN6v.jpg"
-                                    alt="">
-
-                              <div class="price-start">
-                                    <p>Price 50$/starting</p>
-                              </div>
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Nazib</h5>
-                                          <p>Web developer</p>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <div class="single-features-area">
-                              <img src="assets/img/bg-img/xfeature-5.jpg.pagespeed.ic.ukchyPoOs3.jpg"
-                                    alt="">
-
-                              <div class="price-start">
-                                    <p>Price 35$/starting</p>
-                              </div>
-                              <div
-                                    class="feature-content d-flex align-items-center justify-content-between">
-                                    <div class="feature-title">
-                                          <h5><i class="fa fa-user"></i> Sojib</h5>
-                                          <p>SEO specialist</p>
-                                    </div>
-                              </div>
-                        </div>
                     </div>
             </div>
       </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Buyer;
 use App\Models\DelevaryOrder;
+use App\Models\JobApply;
+use App\Models\Seller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,9 +18,19 @@ class BuyerController extends Controller
      */
     public function index()
     {
+
         $buyers = Buyer::all();
+        $seller = Seller::get();
+        $sellerRequest= JobApply::all();
         $delivary_order = DelevaryOrder::all();
-        return view('buyerdashboard', compact('buyers','delivary_order'));
+        return view('buyerdashboard', compact('buyers','delivary_order','seller', 'sellerRequest'));
+    }
+    public function sellerRequest()
+    {
+
+        $sellerRequest= JobApply::all();
+
+        return view('buyerdashboard', compact('sellerRequest'));
     }
 
     /**
@@ -67,7 +79,7 @@ class BuyerController extends Controller
      */
     public function show(Buyer $buyer)
     {
-        //
+
     }
 
     /**

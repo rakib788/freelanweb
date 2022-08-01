@@ -15,4 +15,7 @@ class Seller extends Model
         'image',
         'price',
     ];
+    // public function jobs(){
+    //     return $this->hasMany(JobApply::class);
+    // }
 }

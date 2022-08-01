@@ -60,10 +60,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                         <a class="nav-link" data-toggle="tab" href="#tabs-3"  role="tab">Delivered Job</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Review</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">Commuinity</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-4"  role="tab">Seller Request</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="javascript:void(0)" ondblclick="alert('Coming soon')" role="tab">More</a>
@@ -126,6 +123,22 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                                 <p>{{ $data->description }}</p>
                                                 <div>
                                                     <img class="dashboard-img" src="{{ asset($data->file) }}" alt="Card image cap">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                    <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                        @foreach ( $sellerRequest as $list)
+                                        <div class="single-feature-events-area dt-2 job-post d-sm-flex align-items-center wow fadeInUpBig"
+                                            data-wow-delay="0.2s">
+                                            <div class="feature-events-content">
+                                                <p>Seller Request</p>
+                                                <p>{{ $list->post_id }}</p>
+                                                <p>{{ $list->seller_id }}</p>
+                                                <p>{{ $list->desc }}</p>
+                                                <div>
+                                                    <img class="dashboard-img" src="{{ asset($list->file) }}" alt="Card image cap">
                                                 </div>
                                             </div>
                                         </div>

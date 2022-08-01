@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
         if ($request->HasFile('image')){
             $image = $request->file('image');
             $img_full_name = time().'.'.$image->getClientOriginalExtension();
-            $img_path = 'media/';
+            $img_path = 'media/profile/';
             $img_name = $img_path.$img_full_name;
             $image->move($img_path,$img_full_name);
 
