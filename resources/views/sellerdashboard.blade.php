@@ -106,8 +106,8 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                               @csrf
                                                   <div class="row">
                                                     <div class="col-12">
-                                                        <input type="text" name="name" class="form-control"
-                                                              placeholder="Gig Type" required>
+                                                        <input type="hidden" name="name" class="form-control"
+                                                              placeholder="Seller Name" value="{{ Auth::user()->name }}" required>
                                                   </div>
                                                   <div class="col-12">
                                                     <input type="hidden" name="seller_id" value="{{ Auth::user()->id }}" class="form-control"

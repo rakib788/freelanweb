@@ -2075,3 +2075,6 @@ div#dorneNav {
     border: 1px solid black;
     border-radius: 10px;
 }
+.font-capital{
+    text-transform: capitalize;
+}

@@ -134,7 +134,7 @@ style="background-image:url(assets/img/bg-img/xhero-1.jpg.pagespeed.ic.hwB2Ntcwl
                                             <div class="feature-events-content">
                                                 <h5>Seller Request</h5>
                                                 <p>Post tittle: <strong> {{ $list->post_id }} </strong></p>
-                                                <a href="">
+                                                <a href="{{ route('buyer_req_gig',$list->id) }}">
                                                 <p>Seller Name: <strong> {{ $list->seller_id }}  </strong> Click and Hire me !</p>
                                                 </a>
                                                 <br>

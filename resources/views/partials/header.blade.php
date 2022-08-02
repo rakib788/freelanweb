@@ -48,7 +48,7 @@
                                             @endif
 
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                <a class="nav-link dropdown-toggle font-capital" href="" id="navbarDropdown" role="button"
                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}<i
                                                         class="fa fa-angle-down" aria-hidden="true"></i></a>
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
